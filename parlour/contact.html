@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mike's Salon</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+</head>
+
+<body>
+    <!--navbar-->
+    <section class="other-header">
+        <nav>
+            <!---logo--->
+            <a href="index.html"><img src="images/logo1.jpg"></a>
+
+            <!---business name--->
+            <h1>MIKE'S DREADLOCKS <br>& SALON</h1>
+
+            <!---navlinks--->
+            <div class="nav-links">
+
+                <ul>
+                    <li><a href="location.html">LOCATION</a></li>
+                    <li><a href="dreadlocks.html">DREADLOCKS</a></li>
+                    <li><a href="salon.html">SALON</a></li>
+                    <li><a href="nails.html">NAILS</a></li>
+                    <li><a href="accessories.html">ACCESSORIES</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="home.html">HOME</a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+
+        <!--contact form-->
+        <section class="appointment-container">
+            <div class="appointment-col">
+                <h2>Book an Appointment</h2>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <label for="appointment-day">Appointment Day:</label>
+                    <input type="date" id="appointment-day" name="appointment-day" required>
+
+                    <label for="service">Service Booked:</label>
+                    <select id="service" name="service">
+                        <option value="dreadlocks">Dreadlocks</option>
+                        <option value="hair-cut">Hair Cut</option>
+                        <option value="retouch">Retouch</option>
+                        <option value="hair-coloring">Hair Coloring</option>
+                    </select>
+
+                    <button type="button" class="btn" onclick="showMpesaInfo()">Pay</button>
+                    <div class="mpesa-info" id="mpesa-info">
+                        <p>To make a payment via M-Pesa, follow these steps:</p>
+                        <p>1. Open your M-Pesa menu.</p>
+                        <p>2. Select Lipa na M-Pesa.</p>
+                        <p>3. Enter the Paybill number 123456.</p>
+                        <p>4. Use your phone number as the account number.</p>
+                        <p>5. Enter the amount and confirm the transaction.</p>
+                    </div>
+
+                    <button type="submit" class="btn">Book Now</button>
+                    <button type="button" class="btn" onclick="showCancelOptions()">Cancel Appointment</button>
+
+                    <div class="cancel-options" id="cancel-options">
+                        <button type="button" onclick="alert('Change appointment functionality')">Change Appointment Day</button>
+                        <button type="button" onclick="alert('Appointment cancelled indefinitely')">Cancel Indefinitely</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="appointment-col">
+                <h2>Book an Appointment With Us</h2>
+                <h4>Do you have an enquiry or want to book an appointment?</h4>
+                <h2>OUR LOCATION</h2>
+                <h4>Witeithie, next to main road Dadada</h4>
+                <h2>OUR CONTACT</h2>
+                <h4>+25712345678 <br>+254712345678</h4>
+                <h2>OUR WHATSAPP</h2>
+                <h4>You can connect with us on WhatsApp.</h4>
+            </div>
+        </section>
+
+
+        <section class="footer ">
+            <div class="footer-row ">
+                <table class="working-hours ">
+                    <h3>Working Hours</h3>
+                    <tr>
+                        <th>Mon </th>
+                        <th>Tue</th>
+                        <th>Wed </th>
+                        <th>Thur </th>
+                        <th>Fri </th>
+                        <th>Sat</th>
+                        <th>Sun</th>
+                    </tr>
+                    <tr>
+                        <td>8:a.m-9:p.m</td>
+                        <td>8:a.m-9:p.m</td>
+                        <td>8:a.m-9:p.m</td>
+                        <td>8:a.m-9:p.m</td>
+                        <td>8:a.m-9:p.m</td>
+                        <td>8:a.m-9:p.m</td>
+                        <td>10:a.m-7:p.m</td>
+                    </tr>
+                </table>
+            </div> <br>
+
+            <section class="footer-info">
+                <div class="footer-info">
+                    <div class="footer-col">
+                        <h3>CONTACT US</h3>
+                        <h5>Call us on : <span style="color: orange; padding-left: 10px;">+254712345678</span> <br> Or: <span style="color: orange; padding-left: 65px;">+254712345678</span></h5>
+                        <h5>Sms/Whatsapp on : <span style="color: orange; padding-left: 10px; ">+254712345678</span>
+                        </h5>
+                        <h5>Follow us on:</h5>
+                        <div class="social-icons ">
+                            <a href="https://wa.me/254712345678 " target="_blank "><i class="fab fa-whatsapp "></i></a>
+                            <a href="https://www.tiktok.com/@yourprofile " target="_blank "><i class="fab fa-tiktok "></i></a>
+                            <a href="https://www.instagram.com/yourprofile " target="_blank "><i class="fab fa-instagram "></i></a>
+                        </div>
+                        <h5>Location :<span style="color: rgb(231, 187, 106); padding-left: 10px; ">Witeithie, Thika Road<br>Vision House Ground Floor, Room B13/B14 <br>Opposite Homeway Supermarket <br>Approx, 10m from Thika Super Highway
+                        </span></h5>
+
+                    </div>
+
+                    <div class="footer-col ">
+                        <h3>EVERYTHING ABOUT US</h3>
+                        <ul>
+
+                            <li><a href="dreadlocks.html ">Our Dreadlocks Services</a></li>
+                            <li><a href="salon.html ">Our Salon Services</a></li>
+                            <li><a href="nails.html ">Our Nails Services</a></li>
+                            <li><a href="accessories.html ">Buy Accessories</a></li>
+                            <li><a href="about.html ">Know More About Us</a></li>
+                            <li><a href="location.html ">Where we are located </a></li>
+                            <li><a href="home.html ">Home</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col " id="reviews ">
+                        <h3>WHAT DID OUR CUSTOMER SAY?</h3>
+                        <div class="carousel-container ">
+                            <div class="reviews ">
+                                <div class="review ">
+                                    <img src="images/stylist.jpeg " alt="Jane Doe ">
+                                    <p class="stars ">★★★★★</p>
+                                    <p>"Great service! Highly recommend. "</p>
+                                    <h4>- Mercy Kamau</h4>
+                                </div>
+                                <div class="review ">
+                                    <img src="images/stylist.jpeg " alt="John Smith ">
+                                    <p class="stars ">★★★★☆</p>
+                                    <p>"Good experience, Loved the customer service "</p>
+                                    <h4>- Eric Onyango</h4>
+                                </div>
+                                <div class="review ">
+                                    <img src="images/stylist.jpeg " alt="Emily Johnson ">
+                                    <p class="stars ">★★★★★</p>
+                                    <p>"Absolutely fantastic! Mike 's really good at what he does"</p>
+                                    <h4>- Emily Johnson</h4>
+                                </div>
+                            </div>
+                            <div class="nav-buttons">
+                                <button class="prev" onclick="prevReview()">&#10094;</button>
+                                <button class="next" onclick="nextReview()">&#10095;</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="copyright">
+                <h4>copyright @ 2025 Mike's Dreadlocks & Salon</h4>
+            </div>
+        </section>
+
+        <script>
+            function showMpesaInfo() {
+                document.getElementById('mpesa-info').style.display = 'block';
+            }
+
+            function showCancelOptions() {
+                document.getElementById('cancel-options').style.display = 'block';
+            }
+
+            let index = 0;
+            const reviews = document.querySelector('.reviews');
+            const totalReviews = document.querySelectorAll('.review').length;
+
+            function showReview() {
+                reviews.style.transform = `translateX(-${index * 100}%)`;
+            }
+
+            function nextReview() {
+                index = (index +
+                    1) % totalReviews;
+                showReview();
+            }
+
+            function prevReview() {
+                index = (index - 1 + totalReviews) % totalReviews;
+                showReview();
+            }
+            setInterval(nextReview, 5000); // Auto-slide every 5 seconds
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
